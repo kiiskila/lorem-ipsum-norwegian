@@ -1,0 +1,45 @@
+{
+  "name": "lorem-ipsum-norwegian",
+  "version": "1.0.0",
+  "description": "Dummy text generator in Norwegian. Lorem ipsum på norsk.",
+  "homepage": "https://github.com/kiiskila/lorem-ipsum-norwegian",
+  "bugs": {
+    "url": "https://github.com/kiiskila/lorem-ipsum-norwegian/issues",
+    "email": "kiiskila.will@gmail.com"
+  },
+  "main": "lib/lorem-ipsum-norwegian.js",
+  "types": "lib/lorem-ipsum-norwegian.d.ts",
+  "scripts": {
+    "test": "jest",
+    "build": "tsc",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm test",
+    "preversion": "npm test",
+    "version": "npm test && git add -A src",
+    "postversion": "git push && git push --tags"
+  },
+  "author": "Will Kiiskila <kiiskila.will@gmail.com> (github.com/kiiskila)",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kiiskila/lorem-ipsum-norwegian.git"
+  },
+  "keywords": [
+    "lorem",
+    "ipsum",
+    "dummy",
+    "text",
+    "text",
+    "generator",
+    "norsk",
+    "norwegian"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jest": "^23.3.9",
+    "@types/node": "^10.12.5",
+    "babel-jest": "^23.6.0",
+    "jest": "^23.6.0",
+    "ts-jest": "^23.10.4",
+    "typescript": "^3.1.6"
+  }
+}
