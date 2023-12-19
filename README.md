@@ -20,7 +20,7 @@ or
 
 `lorem(2)` will output 2 paragraphs.
 
-`lorem(3) will output 3 paragraphs.
+`lorem(3)` will output 3 paragraphs.
 
 etc...
 
